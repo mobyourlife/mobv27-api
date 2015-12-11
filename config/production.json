@@ -1,0 +1,14 @@
+{
+	"fansite": {
+		"port": 2700
+	},
+	"api": {
+		"host": "api.mobyourlife.com.br",
+		"port": 80
+	},
+	"v3": {
+		"host": "www.mobyourlife.com.br",
+		"port": 443,
+		"ssl": "s"
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mobv27-api",
+  "version": "2.7.0",
+  "private": true,
+  "description": "Completely new architecture for Mob Your Life.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:fmobstudio/mobv27.git"
+  },
+  "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "compression": "^1.5.0",
+    "express": "^4.13.0",
+    "moment-timezone": "^0.4.0",
+    "mongoose": "^4.0.6",
+    "validator": "^3.41.2"
+  }
+}
