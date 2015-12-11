@@ -19,7 +19,14 @@ app.use(bodyParser.json());
 
 // DATABASE CONNECTION
 // =============================================================================
-mongoose.connect(process.env.MONGOLAB_CONNECTION || config.api.database);
+var connstr = undefined;
+
+// Check for Docker linked container
+if (process.env.DB_PORT_27017_TCP_ADDR && process.env.DB_PORT_27017_TCP_PORT) {
+	connstr = `mongodb://${DB_PORT_27017_TCP_ADDR}:${DB_PORT_27017_TCP_PORT}/mobyourlife`;
+}
+
+mongoose.connect(connstr || process.env.MONGOLAB_CONNECTION || config.api.database);
 
 // ENABLE CORS
 // =============================================================================
